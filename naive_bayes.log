@@ -1,0 +1,88 @@
+2025-05-06 01:59:47,568 - INFO - Starting Naïve Bayes spam classification pipeline
+2025-05-06 01:59:47,568 - INFO - Previewing first 5 lines of data/dataset.csv:
+2025-05-06 01:59:47,569 - INFO - Line 1: ham	Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat...
+2025-05-06 01:59:47,569 - INFO - Line 2: ham	Ok lar... Joking wif u oni...
+2025-05-06 01:59:47,569 - INFO - Line 3: spam	Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's
+2025-05-06 01:59:47,569 - INFO - Line 4: ham	U dun say so early hor... U c already then say...
+2025-05-06 01:59:47,570 - INFO - Line 5: ham	Nah I don't think he goes to usf, he lives around here though
+2025-05-06 01:59:47,570 - INFO - Cleaning dataset: data/dataset.csv
+2025-05-06 01:59:47,584 - INFO - Cleaned dataset saved to data/cleaned_dataset_nb.csv
+2025-05-06 01:59:47,584 - INFO - Dataset cleaning took 0.0143 seconds
+2025-05-06 01:59:47,622 - INFO - Loaded 5574 valid samples
+2025-05-06 01:59:47,624 - INFO - Class distribution: {'not_spam': 4827, 'spam': 747}
+2025-05-06 01:59:47,624 - INFO - Data loading and preprocessing took 0.0556 seconds
+2025-05-06 01:59:47,628 - INFO - Training set size: 4459, Test set size: 1115
+2025-05-06 01:59:47,795 - INFO - Vocabulary size: 9977
+2025-05-06 01:59:47,796 - INFO - Text vectorization took 0.1676 seconds
+2025-05-06 01:59:47,802 - INFO - Naïve Bayes model trained successfully
+2025-05-06 01:59:47,802 - INFO - Naïve Bayes training took 0.0065 seconds
+2025-05-06 01:59:47,821 - INFO - 
+--- Naïve Bayes Results ---
+2025-05-06 01:59:47,822 - INFO - Accuracy: 0.9776
+2025-05-06 01:59:47,822 - INFO - Precision (spam): 0.9921
+2025-05-06 01:59:47,822 - INFO - Recall (spam): 0.8389
+2025-05-06 01:59:47,822 - INFO - F1-score (spam): 0.9091
+2025-05-06 01:59:47,822 - INFO - Naïve Bayes evaluation took 0.0197 seconds
+2025-05-06 01:59:47,834 - INFO - Top spam features: [('free', np.float64(0.002682353036111534)), ('txt', np.float64(0.0018666035493384392)), ('stop', np.float64(0.0016746789821013616)), ('text', np.float64(0.0015970912900126447)), ('mobile', np.float64(0.0015794647590104522)), ('claim', np.float64(0.0015458991892335603)), ('reply', np.float64(0.0014794919805973343)), ('ur', np.float64(0.0014011788002742168)), ('www', np.float64(0.0013985124070268991)), ('prize', np.float64(0.0012837529283372296))]
+2025-05-06 01:59:47,835 - INFO - 
+=== Interactive Spam Detector ===
+2025-05-06 02:00:07,639 - INFO - Single text prediction took 0.0021 seconds
+2025-05-06 02:00:07,640 - INFO - Prediction: not_spam (Time: 0.0021s)
+2025-05-06 02:00:07,650 - INFO - Top features for prediction: [('love', np.float64(0.00019807783458792826))]
+2025-05-06 02:00:07,650 - INFO - Feature explanation took 0.0104 seconds
+2025-05-06 02:00:47,903 - INFO - Single text prediction took 0.0016 seconds
+2025-05-06 02:00:47,903 - INFO - Prediction: not_spam (Time: 0.0016s)
+2025-05-06 02:00:47,913 - INFO - Top features for prediction: [('win', np.float64(0.000897739467152311)), ('dollars', np.float64(6.21711863846143e-05))]
+2025-05-06 02:00:47,914 - INFO - Feature explanation took 0.0099 seconds
+2025-05-06 02:01:38,322 - INFO - Single text prediction took 0.0019 seconds
+2025-05-06 02:01:38,323 - INFO - Prediction: not_spam (Time: 0.0019s)
+2025-05-06 02:01:38,333 - INFO - Top features for prediction: [('win', np.float64(0.000897739467152311)), ('bet', np.float64(6.21711863846143e-05)), ('dollar', np.float64(6.21711863846143e-05))]
+2025-05-06 02:01:38,334 - INFO - Feature explanation took 0.0105 seconds
+2025-05-06 02:02:29,529 - INFO - Starting Naïve Bayes spam classification pipeline
+2025-05-06 02:02:29,529 - INFO - Previewing first 5 lines of data/dataset.csv:
+2025-05-06 02:02:29,530 - INFO - Line 1: ham	Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat...
+2025-05-06 02:02:29,530 - INFO - Line 2: ham	Ok lar... Joking wif u oni...
+2025-05-06 02:02:29,530 - INFO - Line 3: spam	Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's
+2025-05-06 02:02:29,530 - INFO - Line 4: ham	U dun say so early hor... U c already then say...
+2025-05-06 02:02:29,530 - INFO - Line 5: ham	Nah I don't think he goes to usf, he lives around here though
+2025-05-06 02:02:29,530 - INFO - Cleaning dataset: data/dataset.csv
+2025-05-06 02:02:29,545 - INFO - Cleaned dataset saved to data/cleaned_dataset_nb.csv
+2025-05-06 02:02:29,545 - INFO - Dataset cleaning took 0.0145 seconds
+2025-05-06 02:02:29,585 - INFO - Loaded 5574 valid samples
+2025-05-06 02:02:29,586 - INFO - Class distribution: {'not_spam': 4827, 'spam': 747}
+2025-05-06 02:02:29,586 - INFO - Data loading and preprocessing took 0.0573 seconds
+2025-05-06 02:02:29,591 - INFO - Training set size: 4459, Test set size: 1115
+2025-05-06 02:02:29,749 - INFO - Vocabulary size: 9977
+2025-05-06 02:02:29,750 - INFO - Text vectorization took 0.1586 seconds
+2025-05-06 02:02:29,754 - INFO - Naïve Bayes model trained successfully
+2025-05-06 02:02:29,754 - INFO - Naïve Bayes training took 0.0045 seconds
+2025-05-06 02:02:29,767 - INFO - 
+--- Naïve Bayes Results ---
+2025-05-06 02:02:29,767 - INFO - Accuracy: 0.9776
+2025-05-06 02:02:29,768 - INFO - Precision (spam): 0.9921
+2025-05-06 02:02:29,768 - INFO - Recall (spam): 0.8389
+2025-05-06 02:02:29,768 - INFO - F1-score (spam): 0.9091
+2025-05-06 02:02:29,768 - INFO - Naïve Bayes evaluation took 0.0137 seconds
+2025-05-06 02:02:29,776 - INFO - Top spam features: [('free', np.float64(0.002682353036111534)), ('txt', np.float64(0.0018666035493384392)), ('stop', np.float64(0.0016746789821013616)), ('text', np.float64(0.0015970912900126447)), ('mobile', np.float64(0.0015794647590104522)), ('claim', np.float64(0.0015458991892335603)), ('reply', np.float64(0.0014794919805973343)), ('ur', np.float64(0.0014011788002742168)), ('www', np.float64(0.0013985124070268991)), ('prize', np.float64(0.0012837529283372296))]
+2025-05-06 02:02:29,777 - INFO - 
+=== Interactive Spam Detector ===
+2025-05-06 02:02:31,405 - INFO - Single text prediction took 0.0018 seconds
+2025-05-06 02:02:31,405 - INFO - Prediction: not_spam (Time: 0.0018s)
+2025-05-06 02:02:31,416 - INFO - Top features for prediction: [('50', np.float64(0.0008926959423024688)), ('send', np.float64(0.0008440484490730652)), ('week', np.float64(0.0007704609434716525)), ('word', np.float64(0.00043338386751820497)), ('freemsg', np.float64(0.00027303254487013126))]
+2025-05-06 02:02:31,417 - INFO - Feature explanation took 0.0112 seconds
+2025-05-06 02:02:58,015 - INFO - Single text prediction took 0.0024 seconds
+2025-05-06 02:02:58,016 - INFO - Prediction: not_spam (Time: 0.0024s)
+2025-05-06 02:02:58,030 - INFO - Top features for prediction: [('don', np.float64(0.00018215001386776326)), ('think', np.float64(0.00015772048087838984)), ('don think', np.float64(6.21711863846143e-05)), ('goes', np.float64(6.21711863846143e-05)), ('lives', np.float64(6.21711863846143e-05))]
+2025-05-06 02:02:58,031 - INFO - Feature explanation took 0.0145 seconds
+2025-05-06 02:03:12,827 - INFO - Single text prediction took 0.0020 seconds
+2025-05-06 02:03:12,828 - INFO - Prediction: spam (Time: 0.0020s)
+2025-05-06 02:03:12,838 - INFO - Top features for prediction: [('free', np.float64(0.002682353036111534)), ('mobile', np.float64(0.0015794647590104522)), ('latest', np.float64(0.0005479490845962777)), ('camera', np.float64(0.0005379788929509832)), ('colour', np.float64(0.0002885362390097905))]
+2025-05-06 02:03:12,838 - INFO - Feature explanation took 0.0102 seconds
+2025-05-06 02:03:30,589 - INFO - Single text prediction took 0.0013 seconds
+2025-05-06 02:03:30,590 - INFO - Prediction: not_spam (Time: 0.0013s)
+2025-05-06 02:03:30,600 - INFO - Top features for prediction: [('seriously', np.float64(6.21711863846143e-05)), ('spell', np.float64(6.21711863846143e-05))]
+2025-05-06 02:03:30,601 - INFO - Feature explanation took 0.0104 seconds
+2025-05-06 02:03:48,057 - INFO - Single text prediction took 0.0019 seconds
+2025-05-06 02:03:48,058 - INFO - Prediction: spam (Time: 0.0019s)
+2025-05-06 02:03:48,068 - INFO - Top features for prediction: [('mobile', np.float64(0.0015794647590104522)), ('reply', np.float64(0.0014794919805973343)), ('uk', np.float64(0.0012339624710827018)), ('ringtone', np.float64(0.0006696431506718782)), ('charged', np.float64(0.00039599266136620097))]
+2025-05-06 02:03:48,068 - INFO - Feature explanation took 0.0098 seconds

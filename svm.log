@@ -1,0 +1,92 @@
+2025-05-06 01:59:06,806 - INFO - Starting SVM spam classification pipeline
+2025-05-06 01:59:06,807 - INFO - Previewing first 5 lines of data/dataset.csv:
+2025-05-06 01:59:06,807 - INFO - Line 1: ham	Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat...
+2025-05-06 01:59:06,807 - INFO - Line 2: ham	Ok lar... Joking wif u oni...
+2025-05-06 01:59:06,808 - INFO - Line 3: spam	Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's
+2025-05-06 01:59:06,808 - INFO - Line 4: ham	U dun say so early hor... U c already then say...
+2025-05-06 01:59:06,808 - INFO - Line 5: ham	Nah I don't think he goes to usf, he lives around here though
+2025-05-06 01:59:06,809 - INFO - Cleaning dataset: data/dataset.csv
+2025-05-06 01:59:06,831 - INFO - Cleaned dataset saved to data/cleaned_dataset_svm.csv
+2025-05-06 01:59:06,832 - INFO - Dataset cleaning took 0.0228 seconds
+2025-05-06 01:59:06,882 - INFO - Loaded 5574 valid samples
+2025-05-06 01:59:06,884 - INFO - Class distribution: {'not_spam': 4827, 'spam': 747}
+2025-05-06 01:59:06,884 - INFO - Data loading and preprocessing took 0.0777 seconds
+2025-05-06 01:59:06,894 - INFO - Training set size: 4459, Test set size: 1115
+2025-05-06 01:59:07,152 - INFO - Vocabulary size: 9977
+2025-05-06 01:59:07,152 - INFO - Text vectorization took 0.2575 seconds
+2025-05-06 01:59:07,175 - INFO - SVM model trained successfully
+2025-05-06 01:59:07,176 - INFO - SVM training took 0.0230 seconds
+2025-05-06 01:59:07,194 - INFO - 
+--- SVM Results ---
+2025-05-06 01:59:07,194 - INFO - Accuracy: 0.9848
+2025-05-06 01:59:07,194 - INFO - Precision (spam): 0.9521
+2025-05-06 01:59:07,195 - INFO - Recall (spam): 0.9329
+2025-05-06 01:59:07,195 - INFO - F1-score (spam): 0.9424
+2025-05-06 01:59:07,195 - INFO - SVM evaluation took 0.0193 seconds
+2025-05-06 01:59:07,209 - INFO - Top SVM features: [('uk', np.float64(2.2732570594450903)), ('mobile', np.float64(2.1749408714253455)), ('txt', np.float64(1.9388065528128013)), ('claim', np.float64(1.8962492098377632)), ('150p', np.float64(1.780258693943252)), ('won', np.float64(1.7490170436618757)), ('50', np.float64(1.7380799895248473)), ('www', np.float64(1.6829639848904618)), ('com', np.float64(1.66966456450967)), ('video', np.float64(1.5602256383943296))]
+2025-05-06 01:59:07,210 - INFO - 
+=== Interactive Spam Detector ===
+2025-05-06 01:59:56,985 - INFO - Single text prediction took 0.0013 seconds
+2025-05-06 01:59:56,986 - INFO - Prediction: not_spam (Time: 0.0013s)
+2025-05-06 01:59:56,992 - INFO - Top features for prediction: [('love', np.float64(-0.29270189151310955))]
+2025-05-06 01:59:56,993 - INFO - Feature explanation took 0.0069 seconds
+2025-05-06 02:00:03,443 - INFO - Single text prediction took 0.0016 seconds
+2025-05-06 02:00:03,443 - INFO - Prediction: not_spam (Time: 0.0016s)
+2025-05-06 02:00:03,453 - INFO - Top features for prediction: [('love', np.float64(-0.29270189151310955))]
+2025-05-06 02:00:03,453 - INFO - Feature explanation took 0.0098 seconds
+2025-05-06 02:01:14,500 - INFO - Single text prediction took 0.0022 seconds
+2025-05-06 02:01:14,501 - INFO - Prediction: not_spam (Time: 0.0022s)
+2025-05-06 02:01:14,513 - INFO - Top features for prediction: [('win', np.float64(1.0759460827011997)), ('dollars', np.float64(-0.004704232463561014))]
+2025-05-06 02:01:14,513 - INFO - Feature explanation took 0.0119 seconds
+2025-05-06 02:01:53,434 - INFO - Single text prediction took 0.0018 seconds
+2025-05-06 02:01:53,434 - INFO - Prediction: not_spam (Time: 0.0018s)
+2025-05-06 02:01:53,444 - INFO - Top features for prediction: [('win', np.float64(1.0759460827011997)), ('bet', np.float64(-0.1400709849830201)), ('dollar', np.float64(-0.02050716312110903)), ('dollars', np.float64(-0.004704232463561014))]
+2025-05-06 02:01:53,445 - INFO - Feature explanation took 0.0097 seconds
+2025-05-06 02:02:24,099 - INFO - Starting SVM spam classification pipeline
+2025-05-06 02:02:24,099 - INFO - Previewing first 5 lines of data/dataset.csv:
+2025-05-06 02:02:24,100 - INFO - Line 1: ham	Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat...
+2025-05-06 02:02:24,100 - INFO - Line 2: ham	Ok lar... Joking wif u oni...
+2025-05-06 02:02:24,100 - INFO - Line 3: spam	Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's
+2025-05-06 02:02:24,100 - INFO - Line 4: ham	U dun say so early hor... U c already then say...
+2025-05-06 02:02:24,100 - INFO - Line 5: ham	Nah I don't think he goes to usf, he lives around here though
+2025-05-06 02:02:24,101 - INFO - Cleaning dataset: data/dataset.csv
+2025-05-06 02:02:24,115 - INFO - Cleaned dataset saved to data/cleaned_dataset_svm.csv
+2025-05-06 02:02:24,116 - INFO - Dataset cleaning took 0.0148 seconds
+2025-05-06 02:02:24,154 - INFO - Loaded 5574 valid samples
+2025-05-06 02:02:24,156 - INFO - Class distribution: {'not_spam': 4827, 'spam': 747}
+2025-05-06 02:02:24,156 - INFO - Data loading and preprocessing took 0.0568 seconds
+2025-05-06 02:02:24,160 - INFO - Training set size: 4459, Test set size: 1115
+2025-05-06 02:02:24,329 - INFO - Vocabulary size: 9977
+2025-05-06 02:02:24,329 - INFO - Text vectorization took 0.1690 seconds
+2025-05-06 02:02:24,343 - INFO - SVM model trained successfully
+2025-05-06 02:02:24,343 - INFO - SVM training took 0.0138 seconds
+2025-05-06 02:02:24,356 - INFO - 
+--- SVM Results ---
+2025-05-06 02:02:24,356 - INFO - Accuracy: 0.9848
+2025-05-06 02:02:24,356 - INFO - Precision (spam): 0.9521
+2025-05-06 02:02:24,357 - INFO - Recall (spam): 0.9329
+2025-05-06 02:02:24,357 - INFO - F1-score (spam): 0.9424
+2025-05-06 02:02:24,357 - INFO - SVM evaluation took 0.0138 seconds
+2025-05-06 02:02:24,366 - INFO - Top SVM features: [('uk', np.float64(2.2732570594450903)), ('mobile', np.float64(2.1749408714253455)), ('txt', np.float64(1.9388065528128013)), ('claim', np.float64(1.8962492098377632)), ('150p', np.float64(1.780258693943252)), ('won', np.float64(1.7490170436618757)), ('50', np.float64(1.7380799895248473)), ('www', np.float64(1.6829639848904618)), ('com', np.float64(1.66966456450967)), ('video', np.float64(1.5602256383943296))]
+2025-05-06 02:02:24,367 - INFO - 
+=== Interactive Spam Detector ===
+2025-05-06 02:02:34,093 - INFO - Single text prediction took 0.0019 seconds
+2025-05-06 02:02:34,093 - INFO - Prediction: spam (Time: 0.0019s)
+2025-05-06 02:02:34,105 - INFO - Top features for prediction: [('50', np.float64(1.7380799895248473)), ('std', np.float64(0.9096686941163424)), ('freemsg', np.float64(0.8271567246331369)), ('hey', np.float64(-0.774623012547831)), ('ok', np.float64(-0.7111199264520139))]
+2025-05-06 02:02:34,105 - INFO - Feature explanation took 0.0116 seconds
+2025-05-06 02:02:55,534 - INFO - Single text prediction took 0.0016 seconds
+2025-05-06 02:02:55,534 - INFO - Prediction: not_spam (Time: 0.0016s)
+2025-05-06 02:02:55,542 - INFO - Top features for prediction: [('don', np.float64(-0.49657430025683547)), ('nah', np.float64(-0.253614017070532)), ('think', np.float64(-0.24754995351079517)), ('goes', np.float64(-0.16396652790136798)), ('usf', np.float64(-0.09440089627785776))]
+2025-05-06 02:02:55,542 - INFO - Feature explanation took 0.0080 seconds
+2025-05-06 02:03:10,604 - INFO - Single text prediction took 0.0020 seconds
+2025-05-06 02:03:10,604 - INFO - Prediction: spam (Time: 0.0020s)
+2025-05-06 02:03:10,610 - INFO - Top features for prediction: [('mobile', np.float64(2.1749408714253455)), ('latest', np.float64(0.8945033278778052)), ('free', np.float64(0.8280134379581623)), ('camera', np.float64(0.7549877424975167)), ('mobiles', np.float64(0.3984487619412411))]
+2025-05-06 02:03:10,611 - INFO - Feature explanation took 0.0066 seconds
+2025-05-06 02:03:28,013 - INFO - Single text prediction took 0.0019 seconds
+2025-05-06 02:03:28,014 - INFO - Prediction: not_spam (Time: 0.0019s)
+2025-05-06 02:03:28,024 - INFO - Top features for prediction: [('seriously', np.float64(-0.11003496784876374)), ('spell', np.float64(-0.10658185305435865))]
+2025-05-06 02:03:28,024 - INFO - Feature explanation took 0.0103 seconds
+2025-05-06 02:03:45,980 - INFO - Single text prediction took 0.0009 seconds
+2025-05-06 02:03:45,980 - INFO - Prediction: spam (Time: 0.0009s)
+2025-05-06 02:03:45,985 - INFO - Top features for prediction: [('uk', np.float64(2.2732570594450903)), ('mobile', np.float64(2.1749408714253455)), ('reply', np.float64(1.5505733613082198)), ('ringtone', np.float64(1.444196683052179)), ('charged', np.float64(0.9048734178863264))]
+2025-05-06 02:03:45,986 - INFO - Feature explanation took 0.0049 seconds
