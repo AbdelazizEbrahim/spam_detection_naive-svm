@@ -1,4 +1,12 @@
-Spam Classification with Naïve Bayes and SVM 🚀
+Spam Classification with Naïve Bayes and SVM 
+
+Group Members
+Name                        ID
+1. Abdelaziz Ebrahim      1404559
+2. Danya Abdella          1404
+3. Sintayehu Getahun      14
+4. Tsigereda Habtamu      14
+5. Guyo Dido              1410
 
 This repository contains two powerful Python scripts for spam classification using Naïve Bayes and Support Vector Machine (SVM) algorithms. Each script implements a complete pipeline for loading, cleaning, and classifying text data as spam or not_spam, with detailed logging and an interactive mode for real-time predictions.
 📑 Table of Contents
